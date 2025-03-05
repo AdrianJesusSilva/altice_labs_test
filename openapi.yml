@@ -1,0 +1,20 @@
+---
+openapi: 3.0.3
+info:
+  title: altice-labs-test-job-interview API
+  version: 1.0.0-SNAPSHOT
+paths:
+  /labseq/{index}:
+    get:
+      tags:
+      - Lab Seq Resource
+      parameters:
+      - name: index
+        in: path
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        "200":
+          description: OK
